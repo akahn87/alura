@@ -28,6 +28,6 @@ This will run karma, build your files, revision and compress them, and copy the 
 
 ## Jenkins
 
-Xvfb virtual frame buffer x11 [https://wiki.jenkins-ci.org/display/JENKINS/Xvfb+Plugin]
+[Xvfb virtual frame buffer x11](https://wiki.jenkins-ci.org/display/JENKINS/Xvfb+Plugin)
 
-travis yml plugin [https://wiki.jenkins-ci.org/display/JENKINS/Travis+YML+Plugin]
+[travis yml plugin](https://wiki.jenkins-ci.org/display/JENKINS/Travis+YML+Plugin)
