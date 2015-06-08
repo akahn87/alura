@@ -5,12 +5,13 @@
 
 {% extends 'layouts/application.html' %}
 
-{% block content %}
+{% block body_container_main %}
+  <h1>Gulp All The Things!</h1>
   <img src="assets/images/gulp.png" alt="gulp.js">
   {% include "shared/social-icons.html" %}
   <button id="button">Load Async Module</button>
 {% endblock %}
 
-{% block javascript %}
+{% block body_js_page %}
 <script src="assets/javascripts/page1.js"></script>
 {% endblock %}

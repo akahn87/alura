@@ -1,16 +1,64 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>{% block title %}Gulp Asset Pipeline{% endblock %}</title>
-  <link rel="stylesheet" href="assets/stylesheets/global.css">
-  {% block head %}{% endblock %}
-</head>
-<body>
-  <h1>Gulp All The Things!</h1>
+{% block all %}<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7 {{html_classes|default('')}}" lang="{{language|default('en')}}" {{html_attributes|default('')|raw}}><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 {{html_classes|default('')}}" lang="{{language|default('en')}}" {{html_attributes|default('')|raw}}><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 {{html_classes|default('')}}" lang="{{language|default('en')}}" {{html_attributes|default('')|raw}}><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js {{html_classes|default('')}}" lang="{{language|default('en')}}" {{html_attributes|default('')|raw}}><!--<![endif]-->
+{% block head_outer %}
+    <head {{head_attributes|default('')|raw}}>
+      {% block head %}
+        {% block head_meta %}
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="description" content="{% block head_meta_description %}{% endblock %}">
+          <meta name="keywords" content="{% block head_meta_keywords %}{% endblock %}">
+          {% block head_meta_viewport_tag %}<meta name="viewport" content="{% block head_meta_viewport_tag_content %}width=device-width, initial-scale=1{% endblock %}">{% endblock %}
+        {% endblock head_meta %}
+
+        <title>{% block title %}Gulp Asset Pipeline{% endblock %}</title>
+
+        {% block head_css %}
+          <link rel="stylesheet"  href="assets/stylesheets/global.css" >
+        {% endblock %}
+      {% endblock head %}
+    </head>
+{% endblock head_outer %}
+{% block body_outer %}
+<body {{body_attributes|default('')|raw}}>
+  {% block body %}
+    {% block body_chromeframe %}
+      <!--[if lt IE 7]>
+          <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+      <![endif]-->
+    {% endblock body_chromeframe %}
+    {% block body_container %}
+      <div id="container">
+        <header>
+          {% block body_container_header %}
+            {% include "../shared/page-nav.html" %}
+          {% endblock %}
+        </header>
+        <div role="main">
+          {% block body_container_main %}{% endblock %}
+        </div>
+        <footer>
+          {% block body_container_footer %}{% endblock %}
+        </footer>
+      </div>
+    {% endblock body_container %}
+    {% block body_js %}
+      <script src="assets/javascripts/shared.js"></script>
+      {% block body_js_page %}{% endblock %}
+    {% endblock body_js %}
+</body>
+{% endblock body_outer %}
+</html>{% endblock all %}
+
+
+{#
+<h1>Gulp All The Things!</h1>
   {% block content %}{% endblock %}
   {% include "../shared/page-nav.html" %}
   <script src="assets/javascripts/shared.js"></script>
   {% block javascript %}{% endblock %}
-</body>
-</html>
+  {% endblock body %}
+#}
