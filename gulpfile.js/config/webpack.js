@@ -45,9 +45,7 @@ module.exports = function(env) {
     // Karma doesn't need entry points or output settings
     webpackConfig.entry= {
       homepageController: [ './controllers/homepageController.js' ],
-      articleController:  [ './controllers/articleController.js' ],
-      page1: [ './page1.js' ],
-      page2: [ './page2.js' ]
+      articleController:  [ './controllers/articleController.js' ]
     }
 
     webpackConfig.output= {

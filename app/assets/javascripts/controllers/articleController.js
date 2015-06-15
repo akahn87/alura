@@ -1,0 +1,1 @@
+console.log('Article Controller Loaded!!')
