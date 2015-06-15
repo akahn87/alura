@@ -14,7 +14,11 @@ module.exports = function(env) {
     plugins: [],
 
     resolve: {
-      extensions: ['', '.js']
+      extensions: ['', '.js'],
+      alias: {
+        'jquery': jsSrc + '/vendor/jquery.js',
+        'utils': jsSrc + '/utils.js'
+      }
     },
 
     module: {
@@ -28,9 +32,20 @@ module.exports = function(env) {
     }
   }
 
+  webpackConfig.plugins.push(
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      'utils': 'utils'
+    })
+  )
+  
   if(env !== 'test') {
     // Karma doesn't need entry points or output settings
     webpackConfig.entry= {
+      homepageController: [ './controllers/homepageController.js' ],
+      articleController:  [ './controllers/articleController.js' ],
       page1: [ './page1.js' ],
       page2: [ './page2.js' ]
     }
@@ -45,9 +60,10 @@ module.exports = function(env) {
     webpackConfig.plugins.push(
       new webpack.optimize.CommonsChunkPlugin({
         name: 'shared',
-        filename: env === 'production' ? '[name]-[hash].js' : '[name].js',
+        filename: env === 'production' ? '[name]-[hash].js' : '[name].js'
       })
     )
+
   }
 
   if(env === 'development') {
