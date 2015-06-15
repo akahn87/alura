@@ -1,9 +1,7 @@
 {
-  "assets/javascripts/articleController.js": "assets/javascripts/articleController-dbb867f89d5dd7faa8e9.js",
-  "assets/javascripts/page2.js": "assets/javascripts/page2-dbb867f89d5dd7faa8e9.js",
-  "assets/javascripts/page1.js": "assets/javascripts/page1-dbb867f89d5dd7faa8e9.js",
-  "assets/javascripts/homepageController.js": "assets/javascripts/homepageController-dbb867f89d5dd7faa8e9.js",
-  "assets/javascripts/shared.js": "assets/javascripts/shared-dbb867f89d5dd7faa8e9.js",
+  "assets/javascripts/articleController.js": "assets/javascripts/articleController-0e04b5e9ae21e3ee45db.js",
+  "assets/javascripts/homepageController.js": "assets/javascripts/homepageController-0e04b5e9ae21e3ee45db.js",
+  "assets/javascripts/shared.js": "assets/javascripts/shared-0e04b5e9ae21e3ee45db.js",
   "assets/fonts/OpenSans-Bold-webfont.eot": "assets/fonts/OpenSans-Bold-webfont-71ed5feb.eot",
   "assets/fonts/OpenSans-Bold-webfont.svg": "assets/fonts/OpenSans-Bold-webfont-fc16469d.svg",
   "assets/fonts/OpenSans-Bold-webfont.ttf": "assets/fonts/OpenSans-Bold-webfont-a3e7019a.ttf",

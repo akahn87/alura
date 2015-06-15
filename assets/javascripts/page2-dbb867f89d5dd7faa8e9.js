@@ -1,1 +1,0 @@
-webpackJsonp([1,5],[function(n,t,o){n.exports=o(2)},,function(n,t,o){"use strict";var s=o(3);console.log(s("page2.js loaded"))},function(n,t,o){"use strict";n.exports=function(n){return""+n+"!"}}]);
