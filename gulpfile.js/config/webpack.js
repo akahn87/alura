@@ -5,6 +5,7 @@ var webpackManifest = require('../lib/webpackManifest')
 
 module.exports = function(env) {
   var jsSrc = path.resolve(paths.sourceAssets + '/javascripts/')
+  var jsSrcNode = path.resolve(paths.sourceNode)
   var jsDest = paths.publicAssets + '/javascripts/'
   var publicPath = 'assets/javascripts/'
 
@@ -17,7 +18,8 @@ module.exports = function(env) {
       extensions: ['', '.js'],
       alias: {
         'jquery': jsSrc + '/vendor/jquery.js',
-        'utils': jsSrc + '/utils.js'
+        'utils': jsSrc + '/utils.js',
+        'slideout': jsSrcNode + '/slideout/dist/slideout.min.js'
       }
     },
 

@@ -5,9 +5,9 @@ module.exports = {
   name: 'Gulp Starter Icons',
   src: config.sourceAssets + '/icons/*.svg',
   dest: fontConfig.dest,
-  sassDest: config.sourceAssets + '/stylesheets/generated',
+  sassDest: config.sourceAssets + '/stylesheets/_generated',
   template: './gulpfile.js/tasks/iconFont/template.sass',
-  sassOutputName: '_icons.sass',
+  sassOutputName: '_icons.scss',
   fontPath: '../../assets/fonts',
   className: 'icon',
   options: {

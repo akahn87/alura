@@ -31,6 +31,10 @@
       <![endif]-->
     {% endblock body_chromeframe %}
     {% block body_container %}
+      {% block body_leftnav %}
+        {% include "../shared/left-nav.html" %}
+      {% endblock %}
+
       <div id="container">
         <header>
           {% block body_container_header %}
@@ -38,7 +42,8 @@
           {% endblock %}
         </header>
         <div role="main">
-          {% block body_container_main %}{% endblock %}
+          {% block body_container_main %}
+          {% endblock %}
         </div>
         <footer>
           {% block body_container_footer %}{% endblock %}

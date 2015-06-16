@@ -1,0 +1,10 @@
+@charset 'UTF-8';
+
+// 1.Base
+@import '_generated/icons',
+  '_base/colors',
+  '_base/mixins',
+  '_base/typography';
+
+// 2. Modules
+@import '_modules/m-slideout-menu';
