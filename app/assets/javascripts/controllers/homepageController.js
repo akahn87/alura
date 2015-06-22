@@ -19,9 +19,9 @@ button.addEventListener('click', alertAsyncMessage);
   let $document = $(document);
   
   var slideout = new Slideout({
-    'panel': document.getElementById('container'),
-    'menu': document.getElementById('menu'),
-    'padding': 256,
+    'panel': document.getElementById('container-wrapper'),
+    'menu': document.getElementById('leftnav-container'),
+    'padding': 200,
     'tolerance': 70
   });
 

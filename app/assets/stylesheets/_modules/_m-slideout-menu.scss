@@ -1,19 +1,38 @@
 .slideout-menu {
+  background-color: #fff;
+  border-right: 1px solid #f4f4f4;
+  padding: 15px;
   position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
   z-index: 0;
-  width: 256px;
+  width: 200px;
+  overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   display: none;
+
+    @media only screen and (min-width: 768px) {
+      display: block;
+    }
 }
 
 .slideout-panel {
+  background-color: #fff;
   position: relative;
   z-index: 1;
+
+    @media only screen and (min-width: 768px) {
+      transform: translate3d(0px, 0px, 0px) !important;
+      float: right;
+      width: calc(100% - 200px);
+
+      .toggle-button {
+        display: none;
+      }
+    }
 }
 
 .slideout-open {

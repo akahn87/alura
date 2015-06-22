@@ -56,6 +56,7 @@
   },
   "devDependencies": {
     "compression": "^1.4.1",
+    "css-loader": "^0.15.1",
     "express": "^4.12.2",
     "gulp-gh-pages": "^0.4.0",
     "morgan": "^1.5.1",

@@ -17,7 +17,7 @@
         <title>{% block title %}Gulp Asset Pipeline{% endblock %}</title>
 
         {% block head_css %}
-          <link rel="stylesheet"  href="assets/stylesheets/global.css" >
+          <link rel="stylesheet"  href="assets/stylesheets/application.css" >
         {% endblock %}
       {% endblock head %}
     </head>
@@ -25,30 +25,35 @@
 {% block body_outer %}
 <body {{body_attributes|default('')|raw}}>
   {% block body %}
-    {% block body_chromeframe %}
-      <!--[if lt IE 7]>
-          <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-      <![endif]-->
-    {% endblock body_chromeframe %}
     {% block body_container %}
       {% block body_leftnav %}
         {% include "../shared/left-nav.html" %}
       {% endblock %}
 
-      <div id="container">
-        <header>
-          {% block body_container_header %}
-            {% include "../shared/page-nav.html" %}
-          {% endblock %}
-        </header>
-        <div role="main">
-          {% block body_container_main %}
-          {% endblock %}
+      <div id="container-wrapper" class="container-wrapper">
+        <div class="header-container">
+          <header class="wrapper clearfix">
+            {% block body_container_header %}
+              {% include "../shared/page-nav.html" %}
+            {% endblock %}
+          </header>
         </div>
-        <footer>
-          {% block body_container_footer %}{% endblock %}
-        </footer>
+
+        <div class="main-container">
+          <div class="main wrapper clearfix" role="main">
+            {% block body_container_main %}
+            {% endblock %}
+          </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+          <footer class="wrapper">
+            {% block body_container_footer %}{% endblock %}
+            <h3>footer</h3>
+          </footer>
+        </div>
       </div>
+
     {% endblock body_container %}
     {% block body_js %}
       <script src="assets/javascripts/shared.js"></script>
