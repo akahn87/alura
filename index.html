@@ -17,7 +17,7 @@
         <title>Gulp Asset Pipeline</title>
 
         
-          <link rel="stylesheet"  href="assets/stylesheets/global-7ee48fc9.css" >
+          <link rel="stylesheet"  href="assets/stylesheets/application-69ffec53.css" >
         
       
     </head>
@@ -26,46 +26,113 @@
 <body >
   
     
-      <!--[if lt IE 7]>
-          <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-      <![endif]-->
-    
-    
       
-        <nav id="menu">
-  <header>
-    <h2>Menu</h2>
-  </header>
-</nav>
+        <div id="leftnav-container" class="leftnav-container slideout-menu">
+  <div class="clearfix">
+    <a href="http://www.example.com/" target="_blank">
+      <header class="menu__header">
+        <span class="menu__header--title">Title</span>
+      </header>
+    </a>
+    <div class="m-weather-icons m-weather-icons--sun-shower">
+    <div class="cloud"></div>
+    <div class="sun">
+      <div class="rays"></div>
+    </div>
+    <div class="rain"></div>
+  </div>
+    <section class="menu__section">
+      <ul>
+        <li>
+          <a href="#" class="menu__section-item">Mail</a>
+        </li>
+        <li>
+          <a href="#" class="menu__section-item">Search</a>
+        </li>
+        <li>
+          <a href="#" class="menu__section-item menu__section-item--emphasize">Sign In / Join</a>
+        </li>
+        <li>
+          <a href="#" class="menu__section-item">Entertainment</a>
+        </li>
+        <li>
+          <a href="#" class="menu__section-item">Lifestyle</a>
+        </li>
+        <li>
+          <a href="#" class="menu__section-item">News</a>
+        </li>
+        <li>
+          <a href="#" class="menu__section-item">Sports</a>
+        </li>
+        <li>
+          <a href="#" class="menu__section-item">Tech</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>
       
 
-      <div id="container">
-        <header>
-          
-            <nav>
-  <button class="toggle-button">☰</button>
-  <p>
-  	<a href="index.html">home</a>
-  	<a href="article.html">article</a>
-  </p>
+      <div id="container-wrapper" class="container-wrapper">
+        <div class="header-container">
+          <header class="wrapper clearfix">
+            
+              <button class="toggle-button">☰</button>
+<h1 class="title">h1.title</h1>
+<nav>
+  <ul>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/article.html">Article</a></li>
+  </ul>
 </nav>
-          
-        </header>
-        <div role="main">
-          
-  <h1>Gulp All The Things!</h1>
-  <button id="button">Load Async Module</button>
-
+            
+          </header>
         </div>
-        <footer>
-          
-        </footer>
+
+        <div class="main-container">
+          <div class="main wrapper clearfix" role="main">
+            
+  <article>
+    <header>
+      <h1>Gulp All The Things!</h1>
+      <button id="button">Load Async Module</button>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
+    </header>
+    <section>
+      <h2>article section h2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+    </section>
+    <section>
+      <h2>article section h2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+    </section>
+    <footer>
+      <h3>article footer h3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
+    </footer>
+  </article>
+
+  <aside>
+    <h3>Right Rail</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
+  </aside>
+
+          </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+          <footer class="wrapper">
+            
+            <h3>footer</h3>
+          </footer>
+        </div>
       </div>
+
     
     
-      <script src="assets/javascripts/shared-7c0f79154fe856ac74fc.js"></script>
+      <script src="assets/javascripts/shared-eef3175302ffc4066858.js"></script>
       
-<script src="assets/javascripts/homepageController-7c0f79154fe856ac74fc.js"></script>
+<script src="assets/javascripts/homepageController-eef3175302ffc4066858.js"></script>
 
     
 </body>
