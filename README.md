@@ -25,7 +25,7 @@ Features | Tools Used
 ## Usage
 Make sure Node installed. I recommend using [NVM](https://github.com/creationix/nvm) to manage versions. 
 
-This has been tested on Node `0.12.x` - `5.9.0`, and should work on newer versions as well. [File an issue](https://github.com/vigetlabs/gulp-starter/issues) if it doesn't!
+This has been tested on Node `0.12.x` - `5.9.0`, and should work on newer versions as well.
 
 #### Install Dependencies
 ```bash
@@ -55,14 +55,6 @@ npm run test
 #### Build production files:
 ```bash
 npm run production
-```
-
-### Running the Demo
-By default, the files in `src` are pretty minimal. If you're just exploring and would like to play with the [demo](http://vigetlabs.github.io/gulp-starter/) files, the files available in `extras/demo`. Just replace `src` and `config.json` with the ones in `extras/demo`, or simply check out the `demo` branch.
-
-```
-git checkout demo
-npm start
 ```
 
 ### Starting a fresh project
