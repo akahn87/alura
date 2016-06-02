@@ -1,5 +1,5 @@
 // Libraries
-import Tea from 't3js';
+import Alura from 't3js';
 
 // Import services
 import analyticsService from './services/analytics';
@@ -10,10 +10,10 @@ import analyticsBehavior from './behaviors/analytics';
 // Import modules
 import pageModule from './modules/page';
 
-Tea.Application.addService('analytics', analyticsService);
+Alura.Application.addService('analytics', analyticsService);
 
-Tea.Application.addBehavior('analytics', analyticsBehavior);
+Alura.Application.addBehavior('analytics', analyticsBehavior);
 
-Tea.Application.addModule('page', pageModule);
+Alura.Application.addModule('page', pageModule);
 
-global.Tea = Tea;
+global.Alura = Alura;
