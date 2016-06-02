@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "icon-font";
+  src: url('/fonts/icon-font.eot');
+  src: url('/fonts/icon-font.eot?#iefix') format('eot'),
+  url('/fonts/icon-font.woff') format('woff'),
+  url('/fonts/icon-font.ttf') format('truetype');
+}
+
+%icon {
+  font-family: "icon-font";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+  text-decoration: none;
+  text-transform: none;
+  vertical-align: top;
+}
+
+@function icon-char($filename) {
+  $char: "";
+
+@if $filename == social-facebook {
+$char: "\E001";
+}
+@if $filename == social-google {
+$char: "\E002";
+}
+@if $filename == social-instagram {
+$char: "\E003";
+}
+@if $filename == social-linkedin {
+$char: "\E004";
+}
+@if $filename == social-pinterest {
+$char: "\E005";
+}
+@if $filename == social-twitter {
+$char: "\E006";
+}
+@if $filename == social-youtube {
+$char: "\E007";
+}
+@return $char;
+}
+
+@mixin icon($filename, $insert: before) {
+  &:#{$insert} {
+	@extend %icon;
+	content: icon-char($filename);
+  }
+}
+
+.icon-social-facebook {
+  @include icon(social-facebook);
+}
+.icon-social-google {
+  @include icon(social-google);
+}
+.icon-social-instagram {
+  @include icon(social-instagram);
+}
+.icon-social-linkedin {
+  @include icon(social-linkedin);
+}
+.icon-social-pinterest {
+  @include icon(social-pinterest);
+}
+.icon-social-twitter {
+  @include icon(social-twitter);
+}
+.icon-social-youtube {
+  @include icon(social-youtube);
+}

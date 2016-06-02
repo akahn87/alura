@@ -1,0 +1,15 @@
+/**
+ * Main container
+ */
+
+.main {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@include media(">medium") {
+  .main--rightrail {
+    float: left;
+    width: calc(100% - #{$right-rail-width});
+  }
+}

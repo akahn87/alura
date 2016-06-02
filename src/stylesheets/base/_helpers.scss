@@ -1,0 +1,65 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.wrapper {
+  background-color: #fff;
+  padding-top: 15px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: $max-width;
+  width: 100%;
+
+  &::before {
+    content: " ";
+    display: table;
+  }
+  &::after {
+    @extend .clearfix::after;
+  }
+}
+
+.hide-text {
+  overflow: hidden;
+  padding: 0; /* 1 */
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.list--inline {
+  list-style: none;
+  margin-left: -5px;
+  padding-left: 0;
+
+  > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}

@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+  position: relative;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: color $speed $ease;
+
+  @include on-event {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
+
+ul {
+  margin-top: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+hr.striped {
+  background: linear-gradient(45deg,#fff 25%,#e5e5e5 25%,#e5e5e5 50%,#fff 50%,#fff 75%,#e5e5e5 75%,#e5e5e5 100%);
+  background-size: 6px 6px;
+  height: 5px;
+}

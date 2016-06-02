@@ -1,0 +1,29 @@
+.right-rail {
+  font-size: 26px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-transform: uppercase;
+
+  .module {
+    h3 {
+      border-bottom-color: #222;
+      border-bottom-style: solid;
+      border-bottom-width: 3px;
+      margin-bottom: 10px;
+    }
+  }
+    .module + .module {
+      margin-top: 25px;
+    }
+
+  hr {
+    margin-top: 10px;
+  }
+}
+
+@include media(">medium") {
+  .right-rail {
+    float: right;
+    width: $right-rail-width;
+  }
+}

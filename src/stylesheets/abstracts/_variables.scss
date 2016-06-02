@@ -1,0 +1,56 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// Regular font family
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+
+// Consistent settings
+$br: 5px; // Border-radius
+$btn-br: 5px; // Button border-radius
+$padding: 40px; // Padding and margins
+$line-height: 44px; // Consistent height for buttons, inputs etc.
+
+
+// Copy text color
+$text-color: rgb(34, 34, 34) !default;
+
+// Main brand colors
+$primary-color: #3d5476 !default;
+$secondary-color: #cdebfe !default;
+$tertiary-color: #839cb2 !default;
+$muted-color: #6d7d94 !default;
+
+$white: #feffff !default;
+
+// Light grey
+$light-grey: rgb(237, 237, 237) !default;
+
+// Medium grey
+$mid-grey: rgb(153, 153, 153) !default;
+
+// Dark grey
+$dark-grey: rgb(68, 68, 68) !default;
+
+
+// Container's maximum width
+$max-width: 1180px !default;
+
+
+// Breakpoints map
+$breakpoints: (
+  'small': 480px,
+  'medium': 768px,
+  'large': 1200px,
+) !default;
+
+
+// Relative or absolute URL where all assets are served from
+$base-url: '/assets/' !default;
+
+// Animations
+$speed: .2s;
+$ease: cubic-bezier(0.230, 1.000, 0.320, 1.000);
+
+$right-rail-width: 330px;

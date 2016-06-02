@@ -1,0 +1,31 @@
+/*
+ * Category Flair
+ */
+
+.flair {
+  color: $white;
+  padding: 5px 15px;
+
+  a {
+    color: $white;
+  }
+
+  &--urology {
+    background: linear-gradient(to right, rgba(0,76,141,1) 10%,rgba(255,255,255,0) 75%);
+  }
+  &--cardiovascular {
+    background: linear-gradient(to right, rgba(31,31,106,1) 10%,rgba(255,255,255,0) 75%);
+  }
+  &--gastroenterology-disorders {
+    background: linear-gradient(to right, rgba(2,109,115,1) 10%,rgba(255,255,255,0) 75%);
+  }
+  &--diseases-neurology {
+    background: linear-gradient(to right, rgba(40,96,23,1) 10%,rgba(255,255,255,0) 75%);
+  }
+  &--gynecology-obstetrics {
+    background: linear-gradient(to right, rgba(73,73,146,1) 10%,rgba(255,255,255,0) 75%);
+  }
+  &--primary-care {
+    background: linear-gradient(to right, rgba(64,8,92,1) 10%,rgba(255,255,255,0) 75%);
+  }
+}

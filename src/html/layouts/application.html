@@ -10,7 +10,9 @@
     {% block head %}{% endblock %}
   </head>
   <body data-module="page">
-    {% block content %}{% endblock %}
+    <div class="container">
+      {% block content %}{% endblock %}
+    </div>
     {% block javascript %}
       <script src="javascripts/app.js"></script>
       <script>

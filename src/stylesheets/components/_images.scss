@@ -1,0 +1,27 @@
+/*
+ * Images
+ */
+
+.img {
+  &-thumbnail {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: inline-block;
+    height: auto;
+    line-height: 1.42857143;
+    max-width: 100%;
+    padding: 4px;
+    transition: all $speed ease-in-out;
+  }
+
+  &-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+
+  &-circle {
+    border-radius: 50%;
+  }
+}

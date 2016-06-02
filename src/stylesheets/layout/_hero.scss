@@ -1,0 +1,17 @@
+.hero-text {
+  background-color: #eee;
+  color: inherit;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@include media(">medium") {
+  .hero-text {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+.hero-image {
+  line-height: 0;
+}
