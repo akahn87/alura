@@ -7,7 +7,7 @@ export default function(context) {
 			analyticsSrvc = context.getService('analytics');
 		},
 		onclick: function(event, element, elementType){
-			analyticsSrvc.userClicked('something');
+			analyticsSrvc.userClicked(event, element, elementType);
 		}
 	}
 }

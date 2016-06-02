@@ -8,12 +8,12 @@ import analyticsService from './services/analytics';
 import analyticsBehavior from './behaviors/analytics';
 
 // Import modules
-//import asyncLoaderModule from './modules/async-loader';
+import pageModule from './modules/page';
 
 Tea.Application.addService('analytics', analyticsService);
 
 Tea.Application.addBehavior('analytics', analyticsBehavior);
 
-//Tea.Application.addModule('async-loader', asyncLoaderModule);
+Tea.Application.addModule('page', pageModule);
 
 global.Tea = Tea;

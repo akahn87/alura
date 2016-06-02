@@ -1,8 +1,8 @@
 export default function(application) {
 
 	return {
-		userClicked(o){
-			console.log('Tracked:' + o);
+		userClicked(event, element, elementType){
+			console.log('Tracked:', event, element, elementType);
 		}
 	}
 }
