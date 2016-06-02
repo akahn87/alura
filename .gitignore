@@ -1,6 +1,8 @@
 .DS_Store
 .sass-cache
+.publish
 public
 Desktop.ini
 node_modules
-app/assets/stylesheets/generated
+**/generated/_icons.sass
+npm-debug.log

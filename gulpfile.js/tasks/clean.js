@@ -1,13 +1,12 @@
-var gulp = require('gulp');
-var del = require('del');
-var config = require('../config');
-var htmlConfig = require('../config/html');
-var iconFontConfig = require('../config/iconFont');
+var gulp   = require('gulp')
+var del    = require('del')
+var config = require('../config')
 
-gulp.task('clean', function (cb) {
-  del([
-    config.publicAssets,
-    htmlConfig.dest,
-    iconFontConfig.sassDest
-  ], cb);
-});
+var cleanTask = function (cb) {
+  del([config.root.dest]).then(function (paths) {
+    cb()
+  })
+}
+
+gulp.task('clean', cleanTask)
+module.exports = cleanTask
